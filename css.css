@@ -1,0 +1,12 @@
+.btn{
+display: inline-block;
+height: 50px;
+width: 50px;
+color: aqua;
+background-color: blue;
+border: 0;
+}
+.btns{
+    margin-top: 20px;
+    text-align: center;
+}
