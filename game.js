@@ -55,9 +55,15 @@ function draw() {
         if (localStorage.getItem('highscore') == null || parseInt(localStorage.getItem('highscore')) < score) {
             localStorage.setItem('highscore', score)
             ctx.fillText("Snake Master",13*box,20*box)
+            ctx.font = '15px Changa'
+            ctx.fillText("Press Enter to restart",13*box,30*box)
+            ctx.font = '50px Changa'
             ctx.fillText(`${score}`, 13 * box, 25 * box)
         }else{
             ctx.fillText("Your Score",13*box,20*box)
+            ctx.font = '15px Changa'
+            ctx.fillText("Press Enter to restart",13*box,30*box)
+            ctx.font = '50px Changa'
             ctx.fillText(`${score}`, 13 * box, 25 * box)
         }
         dead.play()
